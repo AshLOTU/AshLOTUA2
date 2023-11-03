@@ -1,0 +1,27 @@
+<%- include ("partials/header.ejs"); %>
+<%- include ("partials/main_nav.ejs"); %>
+
+<!-- Main Content -->
+<main> 
+<div class="jumbotron">
+  <h1 class="display-4">Welcome to the <%= title %> Page</h1>
+  <hr class="my-4">
+  <p class="lead">
+  </p>
+</div>
+</main>
+
+<% if (title == "About Me") { %>
+  <%- include ("partials/About_Me.ejs"); %>
+
+<% } else if (title == "Projects") { %>
+  <%- include ("partials/Project.ejs"); %>
+
+<% } else if (title == "Contact") { %>
+  <%- include ("partials/Contact_Me.ejs"); %>
+  <% } else { %>
+
+  <% } %>
+
+<%- include ("partials/bottom_nav.ejs"); %>
+<%- include ("partials/scripts.ejs"); %>
